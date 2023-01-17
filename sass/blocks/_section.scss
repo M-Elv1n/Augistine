@@ -1,0 +1,162 @@
+.refresh {
+    @include d-flex(column, center, 0, 0);
+    background-color: #451314;
+
+    &__text {
+        width: 100%;
+        padding: 20px 0;
+        @include d-flex(row, center, center);
+        background-color: #000;
+        color: #fff;
+
+        a {
+            color: #fff;
+            border-bottom: 1px solid fff;
+            @include h-property(20px)
+        }
+    }
+
+    &__container {
+        @include d-flex(row, flex-start, center, 100px);
+
+        img {
+            width: 600px;
+        }
+
+        &--text {
+            color: #fff;
+            @include d-flex(column);
+
+            h2 {
+                @include h-property(31px);
+            }
+
+            input {
+                padding: 15px 40px;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+.fall {
+    &__container {
+        margin-top: 100px;
+        @include d-flex(row, center, center);
+
+        &--img {
+            width: 100%;
+            @include d-flex(row, flex-start, flex-start, 30px);
+            &__img{
+                @include d-flex();
+                img{
+                    width: 49%;
+                }
+            }
+            img {
+                width: 35%;
+                height: 500px;
+                object-fit: cover;
+            }
+        }
+        &--text{
+            @include d-flex(column);
+            h2{
+                @include h-property(27px)
+            }
+            p{
+                @include h-property(13px, 15px);
+            }
+            input{
+                color: #fff;
+                background-color: #000;
+                padding: 15px 40px;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+.img{
+    margin-top: 100px;
+    background-image: url(/img/section/sec3/img.webp);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 200px 0;
+    h1{
+        color: #fff;
+        @include h-property(50px)
+    }
+}
+
+.boxes{
+    margin-top: 100px;
+    &__container{
+        @include d-flex();
+    }
+    .box{
+        @include d-flex(column);
+        img{
+            width: 100%;
+        }
+        h2{
+            @include h-property(30px)
+        }
+        input{
+            padding: 15px 40px;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        &__text{
+            @include d-flex(column);
+        }
+    }
+}
+
+.join{
+    margin-top: 100px;
+    background-image: url(/img/section/sec5/img-m57zVv6WWeTX3eep.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 50px 0;
+    &__container{
+        @include d-flex(column);
+        color: #fff;
+        h2{
+            @include h-property(30px)
+        }
+        h1{
+            @include h-property(50px, 60px);
+            width: 800px;
+        }
+        &--addres{
+            padding: 15px 180px 15px 10px;
+        }
+        &--btn{
+            padding: 15px 40px;
+            color: #fff;
+            background-color: #000;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}

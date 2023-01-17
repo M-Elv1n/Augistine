@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1199px){
+    .container{
+        max-width: 900px;
+        // margin: auto;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container{
+        max-width: 700px;
+    }
+    .mob{
+        @include d-flex(row, space-between);
+        padding: 20px 30px;
+        top: 0;
+        position: fixed;
+        background-color: #fff;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        h1{
+            @include h-property(30px)
+        }
+        img{
+            cursor: pointer;
+        }
+    }
+    .header{
+        display: none;
+        img{
+            display: block;
+            cursor: pointer;
+        }
+        &__list{
+            display: none;
+        }
+    }
+    .refresh{
+        &__container{
+            @include d-flex(column-reverse);
+            padding-top: 60px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .fall{
+        &__container{
+            @include d-flex(column);
+            &--img{
+                @include d-flex(column, center, flex-start);
+                width: 100%;
+                &__img{
+                    @include d-flex(column-reverse);
+                }
+            }
+            img{
+                width: 100%;
+            }
+            .image{
+                width: 100%
+            }
+            .h{
+                order: -1;
+            }
+        }
+    }
+    .boxes{
+        &__container{
+            @include d-flex(column);
+        }
+    }
+    .join{
+        &__container{
+            @include d-flex(column, center);
+            h2{
+                @include h-property(20px);
+            }
+            h1{
+                @include h-property(30px, 30px);
+                width: 100%;
+            }
+        }
+    }
+    .footer{
+        &__container{
+            @include d-flex(column, center, flex-start, 60px);
+        }
+        &__contact{
+            h2{
+                @include h-property(24px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container{
+        max-width: 600px;
+    }
+    .refresh{
+        &__text{
+            h2{
+                @include h-property(17px, 10px);
+            }
+            a{
+                @include h-property(15px);
+            }
+        }
+        &__main{
+            h2{
+                @include h-property(31px);
+            }
+        }
+    }
+}

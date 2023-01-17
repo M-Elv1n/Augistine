@@ -1,0 +1,28 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    backdrop-filter: blur(10px);
+    background-color: #fff;
+    img{
+        display: none;
+    }
+    &__title{
+        cursor: pointer;
+    }
+    &__container{
+        @include d-flex(row, space-between, center);
+    }
+    a{
+        @include h-property();
+        color: #000;
+        text-decoration: none;
+        &:hover{
+            border-bottom: 1px solid black;
+        }
+    }
+    &__list{
+        @include d-flex();
+    }
+}

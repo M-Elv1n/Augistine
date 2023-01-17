@@ -1,0 +1,22 @@
+.footer {
+    margin-top: 100px;
+    padding-bottom: 70px;
+    &__container{
+        @include d-flex(row, space-between, center);
+    }
+    &__list{
+        &--navigation{
+            @include d-flex(column);
+        }
+    }
+    &__contact{
+        @include d-flex(column);
+    }
+    &__img{
+        @include d-flex(row, flex-start, center);
+    }
+    a{
+        color: #000;
+        border-bottom: #000;
+    }
+}
